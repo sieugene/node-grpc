@@ -1,0 +1,22 @@
+{
+  "name": "node-grpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn tsc",
+    "start": "node dist/index.js",
+    "proto": "proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=./src/proto/types ./src/proto/*.proto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.5",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.11"
+  }
+}
